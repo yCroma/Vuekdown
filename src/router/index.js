@@ -1,12 +1,24 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Markdown from '../views/Markdown.vue'
+import Parse from '../views/Parse.vue'
 
 Vue.use(VueRouter)
 
   const routes = [
   {
     path: '/',
+    name: 'Markdown',
+    component: Markdown
+  },
+  {
+    path: '/parse',
+    name: 'Parse',
+    component: Parse
+  },
+  {
+    path: '/home',
     name: 'Home',
     component: Home
   },
